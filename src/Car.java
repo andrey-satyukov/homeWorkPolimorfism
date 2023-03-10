@@ -1,4 +1,4 @@
-public class Car implements ChekEngine, TrandportVehicle{
+public class Car implements ChekEngine, TrandportVehicle {
 
     private String modelName;
     private int wheelsCount;
@@ -31,6 +31,14 @@ public class Car implements ChekEngine, TrandportVehicle{
 
     @Override
     public void updateTyre() {
-            System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку");
     }
+
+    public void carService(Car car) {
+        System.out.println("Обслуживаем " + car.getModelName());
+        for (int i = 0; i < car.getWheelsCount(); i++) {
+                car.updateTyre();
+            }
+            car.checkEngine();
+        }
 }
