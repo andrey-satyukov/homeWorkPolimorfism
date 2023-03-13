@@ -16,7 +16,7 @@ public class Main {
 
         ServiceStation station = new ServiceStation();
         station.check(car1, null, null);
-//        station.check(null, bicycles, null);
-//        station.check(null, null, trucks);
+        station.check(null, trucks[0], null);
+        station.check(null,null, bicycles[0]);
     }
 }

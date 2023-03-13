@@ -29,4 +29,11 @@ public class Bicycle implements TrandportVehicle{
         System.out.println("Меняем покрышку");
     }
 
+    public void bicycleService() {
+        System.out.println("Обслуживеам " + this.modelName);
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();;
+        }
+
+    }
 }

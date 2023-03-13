@@ -34,11 +34,11 @@ public class Car implements ChekEngine, TrandportVehicle {
         System.out.println("Меняем покрышку");
     }
 
-    public void carService(Car car) {
-        System.out.println("Обслуживаем " + car.getModelName());
-        for (int i = 0; i < car.getWheelsCount(); i++) {
-                car.updateTyre();
+    public void carService() {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+                this.updateTyre();
             }
-            car.checkEngine();
+            this.checkEngine();
         }
 }

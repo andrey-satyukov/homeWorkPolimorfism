@@ -37,4 +37,12 @@ public class Truck implements ChekEngine, TrandportVehicle{
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
+
+    public void truckService() {
+        System.out.println("Обслуживаем "  +  this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();
+        }
+        this.checkEngine();
+    }
 }

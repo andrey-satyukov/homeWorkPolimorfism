@@ -1,7 +1,11 @@
 public class ServiceStation {
     public void check(Car car, Truck truck, Bicycle bicycle) {
         if (car != null) {
-            car.carService(car);
+            car.carService();
+        } else if (truck != null) {
+            truck.truckService();
+        } else if (bicycle != null) {
+            bicycle.bicycleService();
         }
 //        else if (trucks != null) {
 //            for (int j = 0; j < trucks.length; j++) {
